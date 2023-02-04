@@ -119,13 +119,13 @@ module.exports = {
    ```solidity
    // SPDX-License-Identifier: MIT
    pragma solidity 0.8.17;
-
+   
    import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
    import "@openzeppelin/contracts/access/Ownable.sol";
-
+   
    contract MiPrimerToken is ERC20, Ownable {
        constructor() ERC20("Mi Primer Token", "MPRTKN") {}
-
+   
        function mint(address to, uint256 amount) public onlyOwner {
            _mint(to, amount);
        }
@@ -136,24 +136,24 @@ module.exports = {
 
     ```javascript
     const hre = require("hardhat");
-
+    
     async function main() {
       const MiPrimerToken = await hre.ethers.getContractFactory(
         "MiPrimerToken"
       );
       const miPrimerToken = await MiPrimerToken.deploy();
-
+    
       var tx = await miPrimerToken.deployed();
       await tx.deployTransaction.wait(5);
-
+    
       console.log(`Deploy at ${miPrimerToken.address}`);
-
+    
       await hre.run("verify:verify", {
         address: miPrimerToken.address,
         constructorArguments: [],
       });
     }
-
+    
     // We recommend this pattern to be able to use async/await everywhere
     // and properly handle errors.
     main().catch((error) => {
@@ -171,9 +171,13 @@ module.exports = {
     Successfully submitted source code for contract
     contracts/MiPrimerToken.sol:MiPrimerToken at 0x70330D4C4789981585B6e1B3D8d24E922BB84bCA
     for verification on the block explorer. Waiting for verification result...
-
+    
     Successfully verified contract MiPrimerToken on Etherscan.
     https://mumbai.polygonscan.com/address/0x70330D4C4789981585B6e1B3D8d24E922BB84bCA#code
     ```
 
     Puedes rastrear la publicación y verificación del smart contract [aquí](https://mumbai.polygonscan.com/address/0x70330D4C4789981585B6e1B3D8d24E922BB84bCA#code).
+
+12. Ingresar a [Open Zeppelin Defender](https://defender.openzeppelin.com/) y crear una cuenta. Utilizaremos este servicio para recibir notificaciones cuando se efectúan transacciones en el smart contract
+
+13. Ingresar a [Pinata Cloud](https://www.pinata.cloud/) y crear una cuenta. Usaremos Pinata para mantener disponibles nuestros acticos digitales guardados en el IPFS
