@@ -178,6 +178,10 @@ module.exports = {
 
     Puedes rastrear la publicación y verificación del smart contract [aquí](https://mumbai.polygonscan.com/address/0x70330D4C4789981585B6e1B3D8d24E922BB84bCA#code).
 
-12. Ingresar a [Open Zeppelin Defender](https://defender.openzeppelin.com/) y crear una cuenta. Utilizaremos este servicio para recibir notificaciones cuando se efectúan transacciones en el smart contract
+12. Dirígete a `https://ipfs.tech/#install` e instala la versión desktop de IPFS.
 
-13. Ingresar a [Pinata Cloud](https://www.pinata.cloud/) y crear una cuenta. Usaremos Pinata para mantener disponibles nuestros acticos digitales guardados en el IPFS
+    ![image-20221024220019114](https://user-images.githubusercontent.com/3300958/198416349-1b953f59-d7d1-4079-ad4b-b5fd529346d3.png)
+
+13. Ingresar a [Open Zeppelin Defender](https://defender.openzeppelin.com/) y crear una cuenta. Utilizaremos este servicio para recibir notificaciones cuando se efectúan transacciones en el smart contract
+
+14. Ingresar a [Pinata Cloud](https://www.pinata.cloud/) y crear una cuenta. Usaremos Pinata para mantener disponibles nuestros acticos digitales guardados en el IPFS
