@@ -110,9 +110,9 @@ module.exports = {
 
 - `MUMBAI_TESNET_URL`: Crear una cuenta en [Alchemy](https://dashboard.alchemyapi.io/). Ingresar al dashboard y crear una app `+ CREATE APP`. Escoger `NAME` y `DESCRIPTION` cualquiera. Escoger `ENVIRONMENT` = `Development`, `CHAIN` = `Polygon` y `NETWORK` = `Mumbai`. Hacer click en `VIEW KEY` y copiar el link `HTTPS` en el documento `.env` para esta variable de entorno. Saltar el paso que te pide incluir tarjeta de débito.
 
-  ![image-20230203175202108](/Users/steveleec/Documents/0xLee/nfts-workshop/notes.assets/image-20230203175202108.png)
+  ![image-20230203175202108](https://user-images.githubusercontent.com/3300958/216736196-7c319e0a-36ca-456e-b4b9-72984d27e9b2.png)
 
-![image-20230203175233207](/Users/steveleec/Documents/0xLee/nfts-workshop/notes.assets/image-20230203175233207.png)
+![image-20230203175233207](https://user-images.githubusercontent.com/3300958/216736197-e81d4648-6c38-470a-9c48-2c883c9a9701.png)
 
 9. Crear un archivo en la carpeta `contracts` llamado `MiPrimerToken.sol`. Puedes usar el comando `touch contracts/MiPrimerToken.sol` y pegar el siguiente script en dicho archivo:
 
